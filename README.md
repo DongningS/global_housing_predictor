@@ -305,8 +305,3 @@ OOD Rate          : 3.2%  ✅ (expected ~2.5%)
 Calibration       : P10-P90 coverage 57.8%  ⚠️ Underpredicting uncertainty → recalibrate
 Model Status      : 1 WARNING — quantile recalibration recommended
 ```
-
-### Key Finding: Calibration Warning
-The quantile models understate uncertainty (57.8% empirical coverage vs 80% nominal).
-**Remediation**: Conformalized quantile regression (CQR) as next step — wraps any
-quantile predictor with marginal coverage guarantees.
